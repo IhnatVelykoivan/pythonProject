@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7142f4a0-a5da-4b3e-9ff5-00c1fd4675ac" name="Changes" comment="#star gamedev(some game) with 'goIT' marathon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7142f4a0-a5da-4b3e-9ff5-00c1fd4675ac" name="Changes" comment="#star gamedev(some game) with 'goIT' marathon (top, left)">
       <change beforePath="$PROJECT_DIR$/.venv/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,11 +94,20 @@
       <option name="project" value="LOCAL" />
       <updated>1717761042582</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#star gamedev(some game) with 'goIT' marathon (top, left)">
+      <option name="closed" value="true" />
+      <created>1717765008386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717765008386</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#star gamedev(some game) with 'goIT' marathon" />
-    <option name="LAST_COMMIT_MESSAGE" value="#star gamedev(some game) with 'goIT' marathon" />
+    <MESSAGE value="#star gamedev(some game) with 'goIT' marathon (top, left)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#star gamedev(some game) with 'goIT' marathon (top, left)" />
   </component>
 </project>

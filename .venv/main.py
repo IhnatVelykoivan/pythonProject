@@ -13,7 +13,7 @@ COLOR_BLACK = (0, 0, 0)
 
 main_display = pygame.display.set_mode((WIDTH, HEIGHT))
 
-player_size = (10, 10)
+player_size = (20, 20)
 player = pygame.Surface(player_size)
 player.fill(COLOR_WHITE)
 player_rect = player.get_rect()
@@ -22,7 +22,7 @@ player_speed = [1, 1]
 playing = True
 
 while playing:
-    FPS.tick(300)
+    FPS.tick(120)
 
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -41,6 +41,7 @@ while playing:
     if player_rect.left < 0:
         player_speed[0] = -player_speed[0]
 
+    # print(player_rect.bottom)
 
     main_display.blit(player, player_rect)
 
