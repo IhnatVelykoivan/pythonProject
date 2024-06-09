@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7142f4a0-a5da-4b3e-9ff5-00c1fd4675ac" name="Changes" comment="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="7142f4a0-a5da-4b3e-9ff5-00c1fd4675ac" name="Changes" comment="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))&#10;*bonus homework*" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717928151261</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))&#10;*bonus homework*">
+      <option name="closed" value="true" />
+      <created>1717928905889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717928905889</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +173,7 @@
     <MESSAGE value="#star gamedev(some game) with 'goIT' marathon (top, left)" />
     <MESSAGE value="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)" />
     <MESSAGE value="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))" />
-    <option name="LAST_COMMIT_MESSAGE" value="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))" />
+    <MESSAGE value="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))&#10;*bonus homework*" />
+    <option name="LAST_COMMIT_MESSAGE" value="#star gamedev(some game) with 'goIT' marathon (top, left) #(default)&#10;#homework 2&#10;#homework 3(getting trouble (+-done))&#10;*bonus homework*" />
   </component>
 </project>
