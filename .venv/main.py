@@ -43,7 +43,7 @@ def create_enemy():
     enemy_size = (30 ,30)
     enemy = pygame.image.load('enemy.png').convert_alpha()
     # enemy.fill(COLOR_BLUE)
-    enemy_rect = pygame.Rect(WIDTH, random.randint(0, HEIGHT), *enemy_size)
+    enemy_rect = pygame.Rect(WIDTH, random.randint(0, HEIGHT-60), *enemy_size)
     enemy_move = [random.randint(-8, -4), 0]
     return [enemy, enemy_rect, enemy_move]
 
@@ -51,7 +51,7 @@ def create_bonus():
     bonus_size = (30 ,30)
     bonus = pygame.image.load('bonus.png').convert_alpha()
     # bonus.fill(COLOR_GREEN)
-    bonus_rect = pygame.Rect(random.randint(0, WIDTH), 20, *bonus_size)
+    bonus_rect = pygame.Rect(random.randint(0, WIDTH-60), 0, *bonus_size)
     bonus_move = [0, random.randint(4, 8)]
     return [bonus, bonus_rect, bonus_move]
 
