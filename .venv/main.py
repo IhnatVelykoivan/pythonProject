@@ -29,7 +29,7 @@ IMAGE_PATH = "goose"
 PLAYER_IMAGES = os.listdir(IMAGE_PATH)
 
 player_size = (20, 20)
-player = pygame.transform.scale(pygame.image.load('player.png'), (50, 50))
+player = pygame.image.load('player.png').convert_alpha() #pygame.Surface(player_size)
 player_size = player.get_size()
 # player.fill(COLOR_BLACK)
 player_rect = player.get_rect()
@@ -85,7 +85,7 @@ while playing:
         if event.type == CREATE_BONUS:
             bonuses.append(create_bonus())
         if event.type == CHANGE_IMAGE:
-            player = pygame.image.load(os.path.join(IMAGE_PATH, PLAYER_IMAGES[image_index]))
+            player = pygame.transform.scale(pygame.image.load(os.path.join(IMAGE_PATH, PLAYER_IMAGES[image_index])), (100, 65))
             image_index += 1
             if image_index >= len(PLAYER_IMAGES):
                 image_index = 0
