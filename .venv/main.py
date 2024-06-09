@@ -51,7 +51,7 @@ def create_bonus():
     bonus_size = (30 ,30)
     bonus = pygame.image.load('bonus.png').convert_alpha()
     # bonus.fill(COLOR_GREEN)
-    bonus_rect = pygame.Rect(random.randint(0, WIDTH), 0, *bonus_size)
+    bonus_rect = pygame.Rect(random.randint(0, WIDTH), 20, *bonus_size)
     bonus_move = [0, random.randint(4, 8)]
     return [bonus, bonus_rect, bonus_move]
 
