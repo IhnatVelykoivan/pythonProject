@@ -29,7 +29,7 @@ IMAGE_PATH = "goose"
 PLAYER_IMAGES = os.listdir(IMAGE_PATH)
 
 player_size = (20, 20)
-player = pygame.transform.scale(pygame.image.load('player.png'), (120, 50))
+player = pygame.transform.scale(pygame.image.load('player.png'), (50, 50))
 player_size = player.get_size()
 # player.fill(COLOR_BLACK)
 player_rect = player.get_rect()
