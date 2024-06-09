@@ -36,7 +36,7 @@ def create_enemy():
     return [enemy, enemy_rect, enemy_move]
 
 def create_bonus():
-    bonus_size = (30 ,30)
+    bonus_size = (20 ,20)
     bonus = pygame.Surface(bonus_size)
     bonus.fill(COLOR_GREEN)
     bonus_rect = pygame.Rect(random.randint(0, WIDTH), 0, *bonus_size)
@@ -46,7 +46,7 @@ def create_bonus():
 CREATE_ENEMY = pygame.USEREVENT + 1
 pygame.time.set_timer(CREATE_ENEMY, 1500)
 
-CREATE_BONUS = pygame.USEREVENT + 2
+CREATE_BONUS = CREATE_ENEMY + 1
 pygame.time.set_timer(CREATE_BONUS, 3000)
 
 enemies = []
@@ -56,7 +56,7 @@ bonuses = []
 playing = True
 
 while playing:
-    FPS.tick(200)
+    FPS.tick(120)
 
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -76,25 +76,19 @@ while playing:
     if keys[K_RIGHT] and player_rect.right < WIDTH:
         player_rect = player_rect.move(player_move_right)
 
-    if keys[K_UP] and player_rect.top > 0:
+    if keys[K_UP] and player_rect.top < HEIGHT:
         player_rect = player_rect.move(player_move_up)
 
-    if keys[K_LEFT] and player_rect.left > 0:
+    if keys[K_LEFT] and player_rect.left < WIDTH:
         player_rect = player_rect.move(player_move_left)
 
-    for enemy in enemies:
+    for  enemy in enemies:
         enemy[1] = enemy[1].move(enemy[2])
         main_display.blit(enemy[0], enemy[1])
 
-        if player_rect.colliderect(enemy[1]):
-            playing = False
-
-    for bonus in bonuses:
+    for  bonus in bonuses:
         bonus[1] = bonus[1].move(bonus[2])
-        main_display.blit(bonus[0], bonus[2])
-
-        if player_rect.colliderect(bonus[1]):
-            bonuses.pop(bonuses.index(bonus))
+        main_display.blit(bonus[0], bonus[1])
 
     main_display.blit(player, player_rect)
 
@@ -106,4 +100,4 @@ while playing:
 
     for bonus in bonuses:
         if bonus[1].bottom < 0:
-            bonuses.pop(bonuses.index(bonus))
+            bonuses.pop(bonuses.index(enemy))
