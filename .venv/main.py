@@ -39,7 +39,7 @@ player_move_down = [0, 4]
 player_move_right = [4, 0]
 player_move_up = [0, -4]
 player_move_left = [-4, 0]
-
+#commit and go
 def create_enemy():
     enemy_size = (30 ,30)
     enemy = pygame.transform.scale(pygame.image.load('enemy.png'), (120, 50))
